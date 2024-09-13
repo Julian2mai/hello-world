@@ -1,4 +1,4 @@
 # hello-world
 repositorio de prueba ADSO sena
 
-ajuste de se paracion rama main 
+ajuste generacion de conflito repositorio remoto
