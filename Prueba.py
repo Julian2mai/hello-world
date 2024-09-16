@@ -7,3 +7,4 @@ print("Segundo renglon")
 print(type("Hello")) #La funcion type me dice que tipo de dato es lo que esta en los parentesis
 print(type(4))
 print(type(5.5))
+print("pruebagitignore")
