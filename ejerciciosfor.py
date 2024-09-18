@@ -41,5 +41,57 @@ def ejercicio4 ():
         time.sleep(1)
         print(i)
     return
-ejercicio4 ()
+#ejercicio4 ()
 
+def numeros_impares():
+    numero=int(input("ingrese el numero: "))
+
+    for i in range(0,numero+1,2):
+        print("numero:", numero)
+        print(i,end=",")
+        time.sleep(1)
+#numeros_impares() 
+
+def numeros_impares():
+    numero=int(input("ingrese el numero: "))
+    for i in range(1,numero+1,1):
+        print(i,end=",")
+#numeros_impares(6) 
+
+def numeros_impares():
+    numero=int(input("ingrese el numero: "))
+    for i in range(1,numero+1,1):
+        time.sleep(1)
+        print(i)
+        if i==15:
+            break;
+#numeros_impares() ejercico7
+
+def reloj_segundos():
+    numero=int(input("ingrese los segundos: "))
+    for i in range(1,60,1):
+        print(i, "segundos")
+        time.sleep(1)
+        if i==numero:
+            print("tiempo maximo")
+            break
+#reloj_segundos()
+
+def interes():
+    cantidad=int(input("ingrese la cantidad: "))
+    interes_anual=int(input("ingrese el interes anual: "))
+    tiempo=int(input("ingrese el tiempo de inversion: "))
+    valor=cantidad
+    for i in range(tiempo):
+        calculo1=(valor*interes_anual)/100
+        calculo2=valor+calculo1
+        valor=calculo2
+        time.sleep(1)
+        print("el año ",i+1," ",valor)
+    print ("\33[42m" + "las ganancias en ",tiempo," años son: ",valor," " + "\33[0m")
+#interes()
+
+def print_piramide(n):
+    for i in range(n):
+        print(' ' * (n - i - 1) + '8' * (2 * i + 1))
+print_piramide(5)
