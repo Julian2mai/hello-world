@@ -91,7 +91,8 @@ def interes():
     print ("\33[42m" + "las ganancias en ",tiempo," años son: ",valor," " + "\33[0m")
 #interes()
 
-def print_piramide(n):
-    for i in range(n):
-        print(' ' * (n - i - 1) + '8' * (2 * i + 1))
-print_piramide(5)
+def crear_triangulo():
+    filas = int(input("Ingrese el número de filas para el triángulo: "))
+    for i in range(1, filas + 1):
+        print('*' * i)  
+crear_triangulo()
