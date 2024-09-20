@@ -95,4 +95,31 @@ def crear_triangulo():
     filas = int(input("Ingrese el número de filas para el triángulo: "))
     for i in range(1, filas + 1):
         print('*' * i)  
-crear_triangulo()
+#crear_triangulo()
+
+def descubrir_contraseña ():
+    contraseña ="123456789"
+    contraseña_ingresada=""
+    intento_ingresado =int(input("por favor ingrese un numeero de intentos "))
+    intento = 1
+    while contraseña_ingresada !=contraseña:
+        contraseña_ingresada=str(input("Ingrese la contraseña: "))
+        if contraseña_ingresada != contraseña:
+            print("la contraseña no coinciden")
+        elif contraseña_ingresada == contraseña:
+            print ("Contraseña correcta")
+            break
+        if intento == intento_ingresado:
+            print("se llego al limite de los intentos")
+            break
+        intento = intento + 1 
+#descubrir_contraseña()
+
+def buscador_de_letras():
+    frase=str(input("ingrese la frace que quieras= "))
+    letra=str(input("ingrese la letra que quieras buscar= "))
+    contador=0
+    for i in frase:
+        if i == letra:
+            contador=contador+1
+            print("La letra ",letra," se repite ",contador,"veces")
